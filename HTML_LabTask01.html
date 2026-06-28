@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Confirmation Form</title>
+</head>
+<body>
+
+    <h2>Internship Confirmation Form</h2>
+    <p>Please confirm your availability and preferences for the upcoming internship opportunities.</p>
+    
+    <hr>
+
+    <form action="#" method="POST">
+        <p>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student_name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label>Preferred Internship Type:</label><br>
+            <input type="radio" id="on-site" name="internship_type" value="On-Site">
+            <label for="on-site">On-Site</label><br>
+            
+            <input type="radio" id="remote" name="internship_type" value="Remote">
+            <label for="remote">Remote</label>
+        </p>
+
+        <p>
+            <label for="duration">Internship Duration:</label>
+            <select id="duration" name="duration">
+                <option value="6 weeks">6 Weeks</option>
+                <option value="3 months">3 Months</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Skills of Interest:</label><br>
+            <input type="checkbox" id="web-dev" name="skills" value="Web Development">
+            <label for="web-dev">Web Development</label><br>
+
+            <input type="checkbox" id="data-analysis" name="skills" value="Data Analysis">
+            <label for="data-analysis">Data Analysis</label><br>
+
+            <input type="checkbox" id="mobile-apps" name="skills" value="Mobile Apps">
+            <label for="mobile-apps">Mobile Apps</label>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+
+</body>
+</html>
